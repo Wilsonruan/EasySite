@@ -11,14 +11,14 @@
 
 <body>
   <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/logout">
-        Logout
-      </a>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/logout">
+          Logout
+        </a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
@@ -26,6 +26,39 @@
       </div>
     </div>
   </div>
+  <div class="container jumbotron">
+    <div> 
+      <label id="name-label" for="fullName">Full Name</label>
+      <input type="text" name="fullName" id="fullName" class="form-control" placeholder="Enter your name" required />
+    </div>
+    <br>
+    <div> 
+      <label id="web-site-label" for="webSiteName">Web Site Name</label>
+      <input type="text" name="webSiteName" id="webSiteName" class="form-control" placeholder="Web Site Name" required />
+    </div>
+    <br>
+    <a href="" target="_blank" class="container-inside">
+    <img src="\assets\images\A.jpg" alt="..." class="img-thumbnail">
+    <a href="" target="_blank" class="container-inside">
+    <img src="\assets\images\B.jpg" alt="..." class="img-thumbnail">
+    <a href="" target="_blank" class="container-inside">
+    <img src="\assets\images\C.jpg" alt="..." class="img-thumbnail">
+    <a href="" target="_blank" class="container-inside">
+    <img src="\assets\images\D.jpg" alt="..." class="img-thumbnail">
+    <br><br>
+    <form action="/action_page.php">
+      <label for="img">Select image:</label>
+      <input type="file" id="img" name="img" accept="image/*">
+    </form>
+    <br>
+    <div class="form-group">
+      <button type="submit" id="submit" class="float-right submit-button">
+        Submit
+      </button>
+    </div>
+  </div>
+
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/members.js"></script>
