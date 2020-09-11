@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Passport Authentication</title>
+  <title>EasySite</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
@@ -27,34 +27,31 @@
     </div>
   </div>
   <div class="container jumbotron">
-    <div> 
+    <div>
       <label id="name-label" for="fullName">Full Name</label>
       <input type="text" name="fullName" id="fullName" class="form-control" placeholder="Enter your name" required />
     </div>
     <br>
-    <div> 
-      <label id="web-site-label" for="webSiteName">Web Site Name</label>
-      <input type="text" name="webSiteName" id="webSiteName" class="form-control" placeholder="Web Site Name" required />
+    <div class="form-group">
+      <p>Please selet color background?</p>
+      <label><input name="user-recommend" value="White" type="radio" class="input-radio" checked /> White</label><br>
+      <label><input name="user-recommend" value="Black" type="radio" class="input-radio" /> Black</label><br>
+      <label><input name="user-recommend" value="Grey" type="radio" class="input-radio" /> Grey</label><br>
+      <label><input name="user-recommend" value="Pink" type="radio" class="input-radio" /> Pink</label><br>
+      <label><input name="user-recommend" value="Blue" type="radio" class="input-radio" /> Blue</label><br>
+      <label><input name="user-recommend" value="Green" type="radio" class="input-radio" /> Green</label><br>
+      <label><input name="user-recommend" value="Purple" type="radio" class="input-radio" /> Purple</label><br>
+      <label><input name="user-recommend" value="Orange" type="radio" class="input-radio" /> Orange</label><br>
     </div>
-    <br>
-    <a href="" target="_blank" class="container-inside">
-    <img src="\assets\images\A.jpg" alt="..." class="img-thumbnail">
-    <a href="" target="_blank" class="container-inside">
-    <img src="\assets\images\B.jpg" alt="..." class="img-thumbnail">
-    <a href="" target="_blank" class="container-inside">
-    <img src="\assets\images\C.jpg" alt="..." class="img-thumbnail">
-    <a href="" target="_blank" class="container-inside">
-    <img src="\assets\images\D.jpg" alt="..." class="img-thumbnail">
-    <br><br>
     <form action="/action_page.php">
       <label for="img">Select image:</label>
       <input type="file" id="img" name="img" accept="image/*">
     </form>
     <br>
     <div class="form-group">
-      <button type="submit" id="submit" class="float-right submit-button">
+      <a href="/mainpage" id="submit" class="nav-link btn btn-primary">
         Submit
-      </button>
+      </a>
     </div>
   </div>
 
