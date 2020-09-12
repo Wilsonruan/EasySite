@@ -1,5 +1,5 @@
 {
-  "name": "1-Passport-Example",
+  "name": "EasySite",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,7 +9,7 @@
     "watch": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Wilson Ruan, Corey Capstick, Nathan Cornell, Stefan Salituro, and Keith Wan",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "2.4.3",
