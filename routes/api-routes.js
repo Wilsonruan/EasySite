@@ -26,6 +26,12 @@ module.exports = function(app) {
       });
   });
 
+  app.post("/api/username", function(req, res) {
+    db.UserInfo.create({
+      firstName: req.body.firstName,
+    })
+  });
+
   // Route for logging user out
   app.get("/logout", function(req, res) {
     req.logout();

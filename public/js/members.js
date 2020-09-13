@@ -8,11 +8,16 @@ $(document).ready(function() {
 
   toMainPage.on("submit", function(event) {
     event.preventDefault();
-    console.log(userNameInput)
-    towardMainPage();
+    var userData = {
+      firstName: userNameInput.val().trim(),
+    };
+    towardMainPage(userData.firstName);
   })
 
-  function towardMainPage () {
-    window.location.replace("/mainpage");
+  function towardMainPage (firstName) {
+    $.post("/api/username", {
+      firstName: firstName
+    })
+      window.location.replace("/mainpage");
   }
 });
