@@ -35,7 +35,7 @@ module.exports = function(app) {
   // Route for logging user out
   app.get("/logout", function(req, res) {
     req.logout();
-    res.redirect("/login");
+    res.redirect("/");
   });
 
   // Route for getting some data about our user to be used client side
@@ -52,4 +52,15 @@ module.exports = function(app) {
       });
     }
   });
+
+  app.get("/api/user_name", function(req, res) {
+      res.json({
+        firstName: req.UserInfo.firstName,
+        id: req.UserInfo.id
+      });
+    
+  });
 };
+
+
+
