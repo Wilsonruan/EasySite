@@ -1,5 +1,5 @@
+var bcrypt = require("bcryptjs");
 
-// Creating our User model
 module.exports = function(sequelize, DataTypes) {
   var UserInfo = sequelize.define("UserInfo", {
     firstName: {
@@ -7,7 +7,10 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
     }
   });
-  // Creating a custom method for our User model. This will check if an unhashed password entered by the user can be compared to the hashed password stored in our database
+
+  UserInfo.addHook("beforeCreate", function(user) {
+    user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(10), null);
+  });
  
   return UserInfo;
 };
