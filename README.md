@@ -49,4 +49,12 @@ Improvements we would like to make for the future include:
 
 * Splitting the finished website into several sections including nav bar, header, body, and footer
 * Allowing for the addition of extra html pages. For example a contact me page, as well as individual accomplishments
+***
 
+## Authors
+
+* Keith Wan 
+* Nate Cornell
+* Wilson Ruan
+* Stefan Salituro
+* Corey Capstick
