@@ -41,6 +41,7 @@ Wilson: Initiate the GIT Repo, supply customized boilerplate
 * All group members had their own weaknesses with the understanding of the code required
 * Collaborating on github
 * Motivational factors affecting our abilities to push through the difficulties while learning the code simultaneously
+* This was a very complex project, and as a group, we should have had a talk about how to proceed early on. 
 
 ## Improvements
 
