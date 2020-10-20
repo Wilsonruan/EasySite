@@ -1,3 +1,5 @@
+![EasySite](https://user-images.githubusercontent.com/62081345/96534687-3b891f00-125e-11eb-9555-90a1a8ac7c63.gif)
+
 # Project-2 Easy Site
 
 EasySite is a one stop, turnkey, solution for individuals or businesses that would like to template a single 
